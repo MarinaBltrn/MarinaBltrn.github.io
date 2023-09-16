@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Bienvenido a Bubblerman</title>
+    <style>
+        /* Estilos CSS para la pantalla de bienvenida básicos, luego lo mejoro xd */
+        body {
+            background-color: #000000;
+            text-align: center;
+        }
+
+        .mensaje-bienvenida {
+            font-size: 24px;
+            margin-top: 50px;
+            font-family: 'Press Start 2P', cursive;
+            color: white;
+        }
+
+        #boton-inicio {
+            padding: 30px 20px;
+            font-size: 20px;
+            background-color: #7b2982;
+            color: white;
+            font-family: 'Press Start 2P', cursive;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mensaje-bienvenida">
+        <h1>Bienvenido a Bubblerman</h1><br>
+        <p>Presiona el botón para comenzar el juego</p><br>
+        <img src="generales/player_menu.png" width="500px"><br>
+        <button id="boton-inicio">Iniciar Juego</button>
+    </div>
+
+    <script>
+        // se agrega el evento para dirigir al index
+        document.getElementById('boton-inicio').addEventListener('click', function () {
+            window.location.href = 'juego.html';
+        });
+    </script>
+</body>
+
+</html>
+
+
